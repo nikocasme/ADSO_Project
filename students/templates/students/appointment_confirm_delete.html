@@ -1,0 +1,6 @@
+<p>¿Estás seguro de que quieres eliminar la cita de {{ appointment.name }}?</p>
+<form method="post">
+    {% csrf_token %}
+    <button type="submit">Sí, eliminar</button>
+</form>
+<a href="{% url 'appointment_list' %}">Cancelar</a>
